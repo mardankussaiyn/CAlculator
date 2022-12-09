@@ -1,0 +1,43 @@
+.custom-percentage-input{
+  width: 47.5%;
+  appearance: textfield;
+  border-style: none;
+  background-color: hsla(185, 41%, 84%, 0.199);
+  border: 2px solid transparent;
+  outline: none;
+  text-align: right;
+  font-weight: 700;
+  font-size: var(--input-font-size);
+  color: var(--very-dark-cyan);
+  border-radius: 8px;
+  padding: 0.2rem;
+  padding-right: 0.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@keyframes border-active {
+  100%{
+    border: 2px solid var(--strong-cyan);
+  }
+}
+
+.custom-percentage--active{
+  animation: border-active 200ms ease-in forwards;
+}
+
+@keyframes border-hover {
+  100%{
+    border: 2px solid hsla(172, 67%, 45%, 0.5);
+  }
+}
+
+.custom-percentage-input:hover:not(.custom-percentage--active){
+  animation: border-hover 200ms ease-in forwards;
+}
+
+@media (min-width: 900px) {
+  .custom-percentage-input{
+    width: 31%;
+  }
+}

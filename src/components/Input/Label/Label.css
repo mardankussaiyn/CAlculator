@@ -1,0 +1,9 @@
+.label-component{
+  margin-top: 10px;
+}
+
+.label-component__label{
+  color: var(--dark-grayish-cyan);
+  margin-top: 10px;
+  font-weight: 700;
+}
